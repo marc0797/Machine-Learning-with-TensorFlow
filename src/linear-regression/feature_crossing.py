@@ -93,9 +93,9 @@ def reset(training_data, test_data, inputs, outputs, lr, n_epochs, bs, label):
 
 def main(n_epochs=10, lr=0.01, bs=10):
     # Load the dataset
-    training_data_path = "https://download.mlcc.google.com/mledu-datasets/california_housing_train.csv"
+    training_data_path = 'data/california_housing_train.csv'
     training_data = pd.read_csv(training_data_path)
-    test_data_path = "https://download.mlcc.google.com/mledu-datasets/california_housing_test.csv"
+    test_data_path = 'data/california_housing_test.csv'
     test_data = pd.read_csv(test_data_path)
 
     scaling_factor = 1000.0

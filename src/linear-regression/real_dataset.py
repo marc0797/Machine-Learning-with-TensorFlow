@@ -116,7 +116,7 @@ def reset(lr, epochs, bs, data, feature, label):
 
 def main(n_epochs=10, lr=0.01, bs=10, feature="population"):
     # Load the dataset
-    dataset_path = "https://download.mlcc.google.com/mledu-datasets/california_housing_train.csv"
+    dataset_path = 'data/california_housing_train.csv'
     training_data = pd.read_csv(dataset_path)
 
     # Scale the label. We do this so that the default parameters 
