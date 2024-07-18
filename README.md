@@ -1,5 +1,7 @@
 # Machine Learning with TensorFlow
-Short introduction to machine learning using TensorFlow.
+Short introduction to machine learning using TensorFlow by Google:
+
+https://developers.google.com/machine-learning/crash-course
 
 This repository contains exercises and projects for learning machine learning
 using TensorFlow.
@@ -30,6 +32,12 @@ using TensorFlow.
     pip install -r requirements.txt
     ```
 
+## data folder:
+
+    - ** California housing dataset**: Contains data drawn from the 1990 U.S. Census.
+    Run `pandas.DataFrame.describe()` to see descriptions, data ranges and types for 
+    each feature in the set.
+
 ## src folder:
 ### Pandas folder:
 Contains a short tutorial on how to use the Python library Pandas to
@@ -38,5 +46,3 @@ create and make use of DataFrames.
 ### Linear regression folder:
 Contains some short excercises about using Linear Regression decision models
 to make predictions according to some feature in the data.
-
-Dataset used: California housing data set prices in 1990 U.S. Census.
