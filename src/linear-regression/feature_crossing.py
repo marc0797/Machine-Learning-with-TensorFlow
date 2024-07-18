@@ -125,7 +125,11 @@ def main(n_epochs=10, lr=0.01, bs=10):
     concatenate_layer = tf.keras.layers.Concatenate()([inputs['latitude'], inputs['longitude']])
 
     # Add a dense layer
-    outputs = layers.Dense(units=1, name='dense_layer')(concatenate_layer)
+    dense_layer = layers.Dense(units=1, name='dense_layer')(concatenate_layer)
+
+    outputs = {
+        'dense_layer': dense_layer
+    }
 
     model = reset(training_data, test_data, inputs, outputs, lr, n_epochs, bs, label)
 
@@ -165,7 +169,11 @@ def main(n_epochs=10, lr=0.01, bs=10):
     concatenate_layer = tf.keras.layers.Concatenate()(
         [encoded_latitude, encoded_longitude])
 
-    outputs = layers.Dense(units=1, name='dense_layer')(concatenate_layer)
+    dense_layer = layers.Dense(units=1, name='dense_layer')(concatenate_layer)
+
+    outputs = {
+        'dense_layer': dense_layer
+    }
 
     model = reset(training_data, test_data, inputs, outputs, lr, n_epochs, bs, label)
 
@@ -179,7 +187,11 @@ def main(n_epochs=10, lr=0.01, bs=10):
         output_mode="one_hot",
         name="crossed_lat_lon")([discretized_latitude, discretized_longitude])
 
-    outputs = layers.Dense(units=1, name='dense_layer')(feature_cross)
+    dense_layer = layers.Dense(units=1, name='dense_layer')(feature_cross)
+
+    outputs = {
+        'dense_layer': dense_layer
+    }
 
     model = reset(training_data, test_data, inputs, outputs, lr, n_epochs, bs, label)
 
@@ -207,7 +219,11 @@ def main(n_epochs=10, lr=0.01, bs=10):
         output_mode="one_hot",
         name="crossed_lat_lon")([discretized_latitude, discretized_longitude])
 
-    outputs = layers.Dense(units=1, name='dense_layer')(feature_cross)
+    dense_layer = layers.Dense(units=1, name='dense_layer')(feature_cross)
+
+    outputs = {
+        'dense_layer': dense_layer
+    }
 
     model = reset(training_data, test_data, inputs, outputs, lr, n_epochs, bs, label)
     
