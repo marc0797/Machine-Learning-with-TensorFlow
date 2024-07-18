@@ -46,3 +46,8 @@ create and make use of DataFrames.
 ### Linear regression folder:
 Contains some short excercises about using Linear Regression decision models
 to make predictions according to some feature in the data.
+
+### Logistic regression folder:
+Contains a short exercise with a binary classification model to try to predict
+whether the median value of the houses in a city is high from some features 
+provided by the data.
