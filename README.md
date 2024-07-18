@@ -34,9 +34,9 @@ using TensorFlow.
 
 ## data folder:
 
-    - ** California housing dataset**: Contains data drawn from the 1990 U.S. Census.
-    Run `pandas.DataFrame.describe()` to see descriptions, data ranges and types for 
-    each feature in the set.
+- **California housing dataset**: Contains data drawn from the 1990 U.S. Census.
+Run `pandas.DataFrame.describe()` to see descriptions, data ranges and types for 
+each feature in the set.
 
 ## src folder:
 ### Pandas folder:
