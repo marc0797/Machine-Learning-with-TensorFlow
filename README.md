@@ -37,6 +37,9 @@ using TensorFlow.
 - **California housing dataset**: Contains data drawn from the 1990 U.S. Census.
 Run `pandas.DataFrame.describe()` to see descriptions, data ranges and types for 
 each feature in the set.
+- **MNIST dataset**: Contains examples showing pictures of handwritten digits.
+Every example is labelled from 0 to 9 and consists in a 28x28 pixel map, with
+values ranging from 0 to 255 representing the various shades of gray in the image.
 
 ## src folder:
 ### Pandas folder:
